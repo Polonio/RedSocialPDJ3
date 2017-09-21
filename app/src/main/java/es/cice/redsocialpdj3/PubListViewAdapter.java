@@ -55,7 +55,7 @@ public class PubListViewAdapter extends ArrayAdapter<Publicacion> {
             ViewHolder vh = new ViewHolder();
             vh.texto = (TextView) row.findViewById(R.id.coment);
             vh.fecha = (TextView) row.findViewById(R.id.fecha);
-            vh.cantidadComents = (TextView) row.findViewById(R.id.cantidadComentario);
+            vh.cantidadComents = (TextView) row.findViewById(R.id.coment);
             vh.cantidadLikes = (TextView) row.findViewById(R.id.cantidadLikes);
             vh.usuario = (TextView) row.findViewById(R.id.nombreUser);
             vh.imagenUser = (ImageView) row.findViewById(R.id.imageUser);
