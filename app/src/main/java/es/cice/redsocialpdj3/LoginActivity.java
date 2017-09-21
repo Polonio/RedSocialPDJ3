@@ -81,7 +81,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 RoundedBitmapDrawableFactory.create(getResources(), originalBitmap);
 
         roundedDrawable.setCornerRadius(originalBitmap.getHeight());
-        ImageView imageView = (ImageView) findViewById(R.id.imageChuck);
+        ImageView imageView = (ImageView) findViewById(R.id.image_chuck);
         imageView.setImageDrawable(roundedDrawable);
 
         // Set up the login form.
