@@ -9,15 +9,17 @@
     tools:context="es.cice.redsocialpdj3.LoginActivity">
 
     <!-- Login progress -->
+
     <RelativeLayout
         android:layout_width="177dp"
         android:layout_height="153dp">
 
         <ImageView
             android:id="@+id/imageChuck"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/chuck" />
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/chuck"
+            android:layout_centerInParent="true"/>
     </RelativeLayout>
 
     <ProgressBar
