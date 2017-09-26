@@ -10,27 +10,33 @@
 
     <!-- Login progress -->
 
-    <RelativeLayout
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="190dp">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/image_header"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="130dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentTop="true"
-            android:background="@color/colorAccent"
+            android:background="@android:color/holo_red_dark"
             app:srcCompat="@android:drawable/btn_star" />
 
         <ImageView
             android:id="@+id/image_chuck"
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="72dp"
             app:srcCompat="@drawable/chuck"
-            android:layout_centerInParent="true"/>
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="83dp" />
 
-    </RelativeLayout>
+    </FrameLayout>
+
 
     <ProgressBar
         android:id="@+id/login_progress"
@@ -40,16 +46,16 @@
         android:layout_marginBottom="8dp"
         android:visibility="gone" />
 
-        <LinearLayout
+    <LinearLayout
             android:id="@+id/layout_data"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginBottom="69dp"
+            android:layout_marginBottom="23dp"
+            android:layout_marginTop="20dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="50sp">
+            android:layout_alignParentStart="true">
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -86,30 +92,29 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="176dp"
                 android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:background="@android:color/holo_red_dark"
                 android:text="Log in"
                 android:textColor="@android:color/background_light"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/register_button"
-                style="?android:textAppearanceSmall"
-                android:layout_width="176dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/holo_red_dark"
-                android:text="Registrarme"
-                android:textColor="@android:color/background_light"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+        <Button
+            android:id="@+id/register_button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="176dp"
+            android:layout_height="match_parent"
+            android:text="Todavía no tengo cuenta"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold" />
 
         </LinearLayout>
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Red Social"
