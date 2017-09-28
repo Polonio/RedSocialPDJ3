@@ -87,23 +87,25 @@
 
             </android.support.design.widget.TextInputLayout>
 
-            <Button
-                android:id="@+id/login_button"
-                style="?android:textAppearanceSmall"
-                android:layout_width="176dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="32dp"
-                android:background="@android:color/holo_red_dark"
-                android:text="Log in"
-                android:textColor="@android:color/background_light"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+        <Button
+            android:id="@+id/login_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="176dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="accessAccount"
+            android:text="Log in"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/register_button"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="176dp"
             android:layout_height="match_parent"
+            android:onClick="goToRegister"
             android:text="Todavía no tengo cuenta"
             android:textAllCaps="false"
             android:textAppearance="@style/TextAppearance.AppCompat.Caption"
